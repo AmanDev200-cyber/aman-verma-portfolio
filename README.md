@@ -1,20 +1,23 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Aman Verma — Portfolio Website
 
-# Run and deploy your AI Studio app
+Personal portfolio showcasing my work in cybersecurity, AI/ML, and security-first web development.
 
-This contains everything you need to run your app locally.
+## Highlights
+- Security-first system design
+- AI & ML based detection projects
+- Privacy-focused web applications
+- Modern React + Tailwind UI
 
-View your app in AI Studio: https://ai.studio/apps/drive/1DCL0Q7g6D5j9HZVhonNMymxKwYlC9iK5
+## Tech Stack
+- React / TypeScript
+- Tailwind CSS
+- Modern component-driven UI
+- Security-aware design principles
 
-## Run Locally
+## Live Website
+👉 https://<your-live-link>
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Contact
+- Email: amanwork2204@gmail.com
+- LinkedIn: https://www.linkedin.com/in/aman-verma-268087297/
+- GitHub: https://github.com/AmanDev200-cyber
