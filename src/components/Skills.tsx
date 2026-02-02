@@ -24,9 +24,9 @@ const Skills: React.FC = () => {
               <ul className="space-y-3">
                 {SKILLS.filter(s => s.category === category).map((skill) => (
                   <li key={skill.name} className="flex items-start group">
-                    <CheckCircle2 
-                      size={18} 
-                      className={`mr-3 mt-0.5 ${skill.highlight ? 'text-emerald-400' : 'text-slate-600 group-hover:text-slate-400'} transition-colors`} 
+                    <CheckCircle2
+                      size={18}
+                      className={`mr-3 mt-0.5 ${skill.highlight ? 'text-emerald-400' : 'text-slate-600 group-hover:text-slate-400'} transition-colors`}
                     />
                     <span className={`${skill.highlight ? 'text-slate-200 font-medium' : 'text-slate-400'} group-hover:text-white transition-colors`}>
                       {skill.name}
