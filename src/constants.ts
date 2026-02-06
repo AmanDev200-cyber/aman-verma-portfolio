@@ -14,18 +14,18 @@ export const SKILLS: Skill[] = [
   { name: 'ML-based Detection Systems', category: SkillCategory.SECURITY, highlight: true },
   { name: 'Applied Cryptography', category: SkillCategory.SECURITY },
   { name: 'Digital & Network Forensics', category: SkillCategory.SECURITY },
-  
+
   // Frontend
   { name: 'React / Next.js', category: SkillCategory.FRONTEND, highlight: true },
   { name: 'TypeScript', category: SkillCategory.FRONTEND },
   { name: 'Data Visualization (Three.js / D3)', category: SkillCategory.FRONTEND },
-  
+
   // Backend
   { name: 'Python (Scripting & Automation)', category: SkillCategory.BACKEND, highlight: true },
   { name: 'Node.js', category: SkillCategory.BACKEND },
   { name: 'Firebase / Cloud Services', category: SkillCategory.BACKEND },
   { name: 'ML/AI (TensorFlow, scikit-learn)', category: SkillCategory.BACKEND },
-  
+
   // DevOps & Tools
   { name: 'Docker (Containerization)', category: SkillCategory.TOOLS },
   { name: 'Burp Suite', category: SkillCategory.TOOLS, highlight: true },
@@ -256,6 +256,54 @@ export const PROJECTS: Project[] = [
     techStack: ['Python', 'Streamlit', 'Scikit-Learn', 'NLTK'],
     repoUrl: 'https://github.com/AmanDev200-cyber/MachineLearning_Cybersecurity',
     imagePlaceholder: 'https://picsum.photos/seed/spam/800/604',
+    featured: true,
+  },
+  {
+    id: '6',
+    slug: 'secure-notes-app',
+    title: 'Secure Notes Application',
+    tagline: 'A security-first notes application built with Flask, demonstrating server-side authentication, role-based access control, CSRF protection, and audit logging.',
+    problem: 'Many beginner web applications implement CRUD functionality without enforcing proper authorization, session hardening, or security monitoring, resulting in insecure systems.',
+    whyFails: [
+      'Lack of proper authorization checks',
+      'Weak session management',
+      'Missing security monitoring & logging'
+    ],
+    solution: 'This project implements a secure note management system with strict server-side enforcement of authentication, authorization, and security logging.',
+    systemApproach: [
+      'User authentication (PBKDF2)',
+      'Role-Based Access Control (RBAC)',
+      'CSRF protection on state changes',
+      'Secure session cookies (HttpOnly, SameSite)'
+    ],
+    technicalDecisions: [
+      'Flask for backend logic',
+      'Werkzeug for secure password hashing',
+      'Server-side session management',
+      'SQLite for relational data storage'
+    ],
+    specialSection: {
+      title: 'Audit Logging',
+      items: [
+        'Logs login attempts',
+        'Logs note creation, modification, and deletion',
+        'Logs CSRF-blocked requests',
+        'Logs unauthorized access attempts'
+      ]
+    },
+    outcome: [
+      'Enforced strict server-side security',
+      'Prevented common web attacks (CSRF, IDOR)',
+      'Demonstrated secure audit trails'
+    ],
+    learnings: [
+      'Security must be enforced server-side, not assumed from the UI',
+      'Authorization checks are required for every protected action',
+      'Audit logs are essential for detecting misuse and attacks',
+      'RBAC simplifies permission management in multi-user systems'
+    ],
+    techStack: ['Flask', 'Python', 'SQLite', 'Jinja2', 'Werkzeug'],
+    imagePlaceholder: 'https://picsum.photos/seed/securenotes/800/605',
     featured: true,
   }
 ];

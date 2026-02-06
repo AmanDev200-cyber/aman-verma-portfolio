@@ -8,7 +8,7 @@ interface ProjectsProps {
 }
 
 const getProjectIcon = (slug: string) => {
-  if (slug.includes('safe')) return Shield;
+  if (slug.includes('safe') || slug.includes('secure')) return Shield;
   if (slug.includes('cloud')) return Database;
   if (slug.includes('password')) return Lock;
   if (slug.includes('spam')) return Terminal;
