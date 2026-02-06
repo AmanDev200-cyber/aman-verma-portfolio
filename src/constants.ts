@@ -303,6 +303,7 @@ export const PROJECTS: Project[] = [
       'RBAC simplifies permission management in multi-user systems'
     ],
     techStack: ['Flask', 'Python', 'SQLite', 'Jinja2', 'Werkzeug'],
+    repoUrl: 'https://github.com/AmanDev200-cyber/Secure_Notes_flask',
     imagePlaceholder: 'https://picsum.photos/seed/securenotes/800/605',
     featured: true,
   }
