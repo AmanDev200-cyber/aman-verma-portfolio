@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, ChevronDown } from 'lucide-react';
+import { InteractiveHoverButton } from './ui/interactive-hover-button';
 
 interface HeroProps {
   onViewProjects: () => void;
@@ -15,7 +16,7 @@ const Hero: React.FC<HeroProps> = ({ onViewProjects }) => {
       </div>
 
       <div className="max-w-4xl mx-auto px-6 text-center">
-        
+
         {/* Badge */}
         <div className="inline-flex items-center px-3 py-1 rounded-full border border-slate-700 bg-slate-900/50 backdrop-blur-sm mb-6 animate-fade-in-up">
           <span className="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse mr-2"></span>
@@ -37,13 +38,11 @@ const Hero: React.FC<HeroProps> = ({ onViewProjects }) => {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button 
+          <InteractiveHoverButton
+            text="View Projects"
             onClick={onViewProjects}
-            className="group flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-900 px-8 py-3.5 rounded-lg font-bold transition-all duration-200 w-full sm:w-auto shadow-[0_0_20px_rgba(16,185,129,0.25)] hover:shadow-[0_0_30px_rgba(16,185,129,0.4)]"
-          >
-            View Projects
-            <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-          </button>
+            className="w-56"
+          />
         </div>
 
       </div>

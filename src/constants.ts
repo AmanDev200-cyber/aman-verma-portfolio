@@ -81,49 +81,7 @@ export const PROJECTS: Project[] = [
     imagePlaceholder: 'https://picsum.photos/seed/safedocs/800/600',
     featured: true,
   },
-  {
-    id: '2',
-    slug: 'cloud-file-sharing',
-    title: 'Cloud Based File Sharing',
-    tagline: 'Secure Encrypted Cloud File Sharing Platform',
-    problem: 'Traditional cloud storage solutions expose users to privacy risks, weak access control, and centralized trust failures.',
-    whyFails: [
-      'Server-side access to files',
-      'Weak encryption transparency',
-      'Over-privileged sharing models'
-    ],
-    solution: 'A secure cloud-based file-sharing system emphasizing encryption, authentication, and controlled access, built using Firebase.',
-    systemApproach: [
-      'Firebase Authentication for user identity',
-      'Encrypted file storage',
-      'Controlled file access permissions'
-    ],
-    technicalDecisions: [
-      'Firebase for scalability and reliability',
-      'Encryption before storage',
-      'Role-based access control'
-    ],
-    specialSection: {
-      title: 'Security Focus',
-      items: [
-        'No unauthorized file access',
-        'Secure authentication flow',
-        'Controlled sharing permissions'
-      ]
-    },
-    outcome: [
-      'Secure and scalable file-sharing platform',
-      'Demonstrated practical cloud security principles'
-    ],
-    learnings: [
-      'Security must be designed before, not after, implementation',
-      'Simplicity improves security and usability'
-    ],
-    techStack: ['React', 'Firebase', 'Encryption', 'Cloud Security'],
-    repoUrl: 'https://github.com/AmanDev200-cyber/Cloud_based_file_sharing',
-    imagePlaceholder: 'https://picsum.photos/seed/cloudfiles/800/601',
-    featured: true,
-  },
+
   {
     id: '3',
     slug: 'carbon-auditor',
@@ -305,6 +263,54 @@ export const PROJECTS: Project[] = [
     techStack: ['Flask', 'Python', 'SQLite', 'Jinja2', 'Werkzeug'],
     repoUrl: 'https://github.com/AmanDev200-cyber/Secure_Notes_flask',
     imagePlaceholder: 'https://picsum.photos/seed/securenotes/800/605',
+    featured: true,
+  },
+  {
+    id: '7',
+    slug: 'secure-data-exchange',
+    title: 'Secure Data Exchange',
+    tagline: 'Self-Hosted Encrypted File Sharing Platform',
+    problem: 'Most file-sharing platforms either lack strong encryption or require trusting third-party services with sensitive data and encryption keys.',
+    whyFails: [
+      'Lack of strong encryption',
+      'Reliance on third-party trust',
+      'Exposed encryption keys'
+    ],
+    solution: 'This project implements server-side AES-256-GCM encryption, unique file identifiers, and metadata preservation, allowing secure upload and retrieval of files while maintaining user control over encryption keys.',
+    systemApproach: [
+      'AES-256-GCM encryption (Per-file IV)',
+      'Server-side encrypt-before-store',
+      'Unique file identifiers',
+      'Self-hosted architecture'
+    ],
+    technicalDecisions: [
+      'Node.js crypto (AES-256-GCM)',
+      'Multer for memory storage',
+      'Express.js backend',
+      'No plaintext disk writes'
+    ],
+    specialSection: {
+      title: 'Security Notes',
+      items: [
+        'Files encrypted before storage',
+        'Encryption keys never exposed to clients',
+        'Loss of master key = permanent data loss',
+        'Minimal trust in third-party services'
+      ]
+    },
+    outcome: [
+      'Practical encryption design',
+      'Secure data handling',
+      'Full key ownership'
+    ],
+    learnings: [
+      'Privacy requires control',
+      'Key management is critical',
+      'Metadata hygiene is important'
+    ],
+    techStack: ['Node.js', 'Express.js', 'AES-256-GCM', 'Multer'],
+    repoUrl: 'https://github.com/AmanDev200-cyber/secure-data-exchange',
+    imagePlaceholder: 'https://picsum.photos/seed/securedata/800/600',
     featured: true,
   }
 ];
